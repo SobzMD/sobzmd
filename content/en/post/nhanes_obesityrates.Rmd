@@ -1,0 +1,157 @@
+---
+title: "NHANES Obesity Rates"
+author: "Sobhan"
+date: "2022-12-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+pacman::p_load(nhanesA, tidyverse)
+
+
+```
+
+
+```{r,message=FALSE, warning=FALSE, echo=FALSE, error=F}
+#Demographic data cycles 2011-2018
+demo_2011_18 <- full_join(nhanes("Demo_G"),nhanes("Demo_H")) %>% 
+  full_join(full_join(nhanes("Demo_I"),nhanes("Demo_J"))) %>% 
+  select(SEQN, RIAGENDR, RIDAGEYR, RIDRETH1) 
+
+
+#Body measures data cycles 2011-2018
+body_2011_18 <- full_join(nhanes("BMX_G"), nhanes("BMX_H")) %>% 
+  full_join(full_join(nhanes("BMX_I"),nhanes("BMX_J"))) %>% 
+  select(SEQN, BMXWT, BMXHT, BMXBMI)
+
+#Body Composition data cycles 2011-2018
+dxa_2011_18 <- full_join(nhanes("DXX_G"),nhanes("DXX_H")) %>% 
+  full_join(full_join(nhanes("DXX_I"),nhanes("DXX_J"))) %>% 
+   rowwise() %>% 
+  mutate(ALM = sum(c(DXDRLLE, DXDLLLE, DXDRALE, DXDLALE))/1000, 
+         DXDTOLE = DXDTOLE/1000)%>% 
+  select(SEQN, DXDTOLE, DXDTOPF, ALM, DXXLSBMD) 
+
+# Lab works data cycles 2011-2018
+lab_2011_18 <- full_join(nhanes("GHB_G"), nhanes("GHB_H")) %>% 
+  full_join(full_join(nhanes("GHB_I"),nhanes("GHB_J"))) %>%
+  mutate(diabetes_status = case_when(
+    LBXGH < 5.7 ~ "Normal",
+    LBXGH >= 5.7 & LBXGH <6.4 ~ "Prediabetic", 
+    LBXGH >= 6.5 ~ "Diabetic"
+  ), 
+  diabetes_status = factor(diabetes_status, 
+                           levels = c("Normal", "Prediabetic",
+                                      "Diabetic")), 
+  diabetes_status_yn = ifelse(test = diabetes_status == "Diabetic",
+                              yes = 1 ,
+                              no = 0),
+  diabetes_status_txt = as.factor(ifelse(diabetes_status == "Diabetic", 
+                               yes = "yes", 
+                               no = "no"))) %>% 
+  rename(a1c = "LBXGH")
+
+# Individual cycles 
+
+# 2011-2012
+cycle_2011_12<- 
+  nhanes("Demo_G") %>%
+  dplyr::pull(var = SEQN)
+
+# 2013-14
+cycle_2013_14 <-
+  nhanes("Demo_H") %>% 
+  dplyr::pull(var = SEQN)
+
+# 2015-16
+cycle_2015_16 <- 
+  nhanes("Demo_I") %>% 
+  dplyr::pull(var = SEQN)
+
+# 2017-18
+cycle_2017_18 <- 
+  nhanes("Demo_J") %>% 
+  dplyr::pull(var = SEQN)
+
+#Joining of data and Mutating data cycles 2011-2018
+df_2011_18<- full_join(demo_2011_18, body_2011_18, by = "SEQN") %>% 
+  full_join(dxa_2011_18, by = "SEQN") %>% 
+  full_join(lab_2011_18, by = "SEQN") %>% 
+  mutate(BMXHT = BMXHT/100, 
+         SMI = ALM/BMXHT^2, 
+         Gender = case_when(
+           RIAGENDR == 1 ~ "Male" ,
+           RIAGENDR ==2 ~ "Female"
+         ), 
+         Age_Group = case_when(
+           RIDAGEYR >= 8 & RIDAGEYR  <= 19 ~ "8-19", 
+           RIDAGEYR >= 20 & RIDAGEYR <= 29 ~ "20-29",
+           RIDAGEYR >= 30 & RIDAGEYR <= 39 ~ "30-39", 
+           RIDAGEYR >= 40 & RIDAGEYR <= 49 ~ "40-49", 
+           RIDAGEYR >= 50 & RIDAGEYR <= 59 ~ "50-59" 
+           ), 
+         BMI_class = case_when(
+           BMXBMI <18.5 ~ "Underweight", 
+           BMXBMI >=18.5 & BMXBMI <= 24.9 ~ "Normal", 
+           BMXBMI >= 25.0 & BMXBMI <= 29.9 ~ "Overweight", 
+           BMXBMI >= 30.0 & BMXBMI <= 34.9 ~ "Class I obese",
+           BMXBMI >=35 ~ "Class II-III obese" 
+         ), 
+         BMI_class = factor(BMI_class,levels=c("Underweight","Normal",
+                                                 "Overweight", 
+                                               "Class I obese",
+                                               "Class II-III obese")), 
+        Gender = factor(Gender, 
+                            levels = c("Male", "Female")),
+        Age_Group = factor(Age_Group,
+                               levels = c("8-19", "20-29", "30-39",
+                                          "40-49", "50-59")),
+        cycle_year = case_when(
+          SEQN %in% c(cycle_2011_12) ~ "2011-2012 wave", 
+          SEQN %in% c(cycle_2013_14) ~ "2013-2014 wave", 
+          SEQN %in% c(cycle_2015_16) ~ "2015-2016 wave", 
+          SEQN %in% c(cycle_2017_18) ~ "2017-2018 wave"), 
+        Race = as.factor(case_when(
+          RIDRETH1 >=1 & RIDRETH1<= 2 ~ "Hispanic", 
+          RIDRETH1 == 3 ~ "White", 
+          RIDRETH1 == 4 ~ "Black",
+          RIDRETH1 == 5 ~ "Other"
+        ))
+        )%>% 
+  drop_na() 
+
+
+
+
+# Checking Data for 
+## Presense of NA
+#summary(is.na(df_2011_18))
+
+
+```
+
+
+## Obesity rates
+
+Here are the obesity rates in USA.
+
+```{r,message=FALSE, warning=FALSE, echo=FALSE, error=F, fig.height= 10, fig.width=15,dpi=1000}
+attach(df_2011_18)
+ 
+obesity_rate <-  table(cycle_year, BMI_class)
+  
+round(prop.table(obesity_rate, c(1))*100, digits = 1) %>% 
+  data.frame() %>%
+  ggplot(aes(x = cycle_year, y = Freq, fill = BMI_class))+ 
+  geom_col(position = position_dodge2(), color = "black") + 
+  geom_text(aes(label = Freq), position = position_dodge(0.9), vjust = -1, size = 5)+ 
+  scale_fill_brewer(name = "BMI Class")+ 
+  theme_bw(base_size = 25) + 
+  theme(axis.text = element_text(colour = "black"))+  
+  labs(y = "Frequncy (%)", 
+       x = "NHANES Data Collection Waves")
+  
+
+
+```
