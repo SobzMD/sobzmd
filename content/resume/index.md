@@ -4,7 +4,7 @@ showTableOfContents: true
 
 ---
 
-{{< button href="sobhan_cv.pdf" target="_self" >}}
+{{< button href="/sobhan_cv.pdf" target="_self" >}}
 
 Download CV 
 
