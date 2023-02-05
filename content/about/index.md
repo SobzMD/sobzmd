@@ -5,12 +5,12 @@ description: ""
 {{< figure src="/img/Vancouver.jpg" caption="Vancouver, Canada" >}}
 
 
-I have being working in clinical settings for 4 years.
-During this time, I have recognized the importance of data driven decision making, so I have continuously been pushing my skills to provide support in clinical research and settings.
+I have been working in clinical settings for 4 years. During this time, I have come to recognize the importance of data-driven decision making, so I have continuously been honing my skills to support clinical research.
 
-I am passionate about health data analytics, and how we can best support all aspects of decision making in clinical settings. Having done my Bachelors and Masters of Science degree in Kinesiology, I have a broad range of knowledge in various health sectors as well as the training for quantitative statistical analysis. I have experience in a variety of data science tools including R statistical programming software, RShiny, R dashboards, SQL, and Microsoft Excel. 
+I am passionate about health data analytics and supporting all aspects of decision making in clinical settings. Having done my Bachelors and Masters of Science degrees in Kinesiology, I have a broad range of knowledge in various health sectors as well as the training for quantitative statistical analysis. I have experience in a variety of data science tools including R statistical programming software, RShiny, R dashboards, SQL, and Microsoft Excel.
 
-I have created this website using RMarkdown Hugo, so I can share my data analytic projects for the purpose of personal interests as well as to continuously improve my skills in computer programming and data analytics. See more in my [resume](/resume/).
+
+I have created this website using RMarkdown Hugo so I can share my data analytic projects for the purpose of personal interests as well as to continuously improve my skills in computer programming and data analytics. See more in my [resume](/resume/).
 
 
 

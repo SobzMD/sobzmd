@@ -16,16 +16,16 @@ Download CV
 
 ## Summary
 
-Having worked within health care teams, many times, I have seen the extent of the limitations of our health system for providing care. Such limitations arose from the lack of peer-reviewed evidence available for a particular treatment, and lack of resources available for properly managing patients with chronic illnesses (mental health, obesity, diabetes, pain, etc.). These limitations, can often severely impact quality of life in those with lived experiences of chronic illnesses.  
+Having worked within health care teams, I have frequently seen the limitations of our health system, which in part seem to arise from a lack of peer-reviewed evidence available for guiding treatments and long-term management of chronic illnesses (including mental illnesses, obesity, diabetes, chronic pain, etc.). These limitations can often severely impact quality of life for those with lived experiences of chronic illnesses.
 
-This has made me to reflect on ways that I could contribute to improving quality of life on larger scales which led me to the path that I am on today as a clinical data analyst. I completed my Master of Science where I coordinated a multi-center clinical trial examining changes in quality of life measures in a post-surgical intervention. During this time, I developed my clinical research skills including producing standard protocols for conducting clinical trials, project management, statistical analysis, and communication and distribution of research findings either through key performance measures (KPIs) to our collaborators or in conferences and publications. 
+This has made me reflect on ways that I can contribute to improving quality of life on larger scales, which led me to the path that I am on today as a clinical data analyst. I completed my Master of Science, where I coordinated a multi-center clinical trial examining changes in quality of life measures with post-surgical intervention. During this time, I developed my clinical research skills, such as producing standard protocols for conducting clinical trials, project management, statistical analysis, and communication and distribution of research findings either through key performance measures (KPIs) to our collaborators or in conferences and publications.
 
-After completing my degree, I took an employment opportunity with the Veteran's Memorial Hospital in Nova Scotia in which I further solidified my biostatistical skills using R statistical packages and its derivatives including RShiny and R flexdashboards. 
+After completing my degree, I took an employment opportunity with the Veteran’s Memorial Hospital in Nova Scotia in which I further solidified my biostatistical skills using R statistical packages and its derivatives, including RShiny and R flexdashboards.
 
+Having worked directly with patients in both clinical care and research settings has given me a unique perspective regarding the *human* in the analysis. This has further increased my passion in clinical data analytics.
 
-Having worked directly with patients in both clinical care and research settings have given a unique perspective regarding considering the *human* in the analysis. This has even increased my passion in clinical data analytics. 
+Presently, I am seeking opportunities to implement my data analytics, statistical analysis, data modeling, and visualization skills at any capacity to improve health care delivery and advancement.
 
-Presently, I am seeking opportunities where I may implement my data analytics, statistical analysis, data modeling and visualization skills at any capacity to improve health care delivery and advancement. 
 
 
 ## Education 
@@ -76,7 +76,7 @@ Presently, I am seeking opportunities where I may implement my data analytics, s
 
 - **Sobhan Mardan-Dezfouli**. Exercise After Bariatric Surgery. Canadian Association of Bariatric Physicians and Surgeons. 2022 Mar.
 
-- **Sobhan Mardan-Dezfouli**. The Impact of Abdominal Body Contouring Surgery on Physical Function After a Massive Weight Loss: A Pilot Non-Randomized Controlled Trial. Canadian Society for Exercise Physiology. Oct 2021.
+- **Sobhan Mardan-Dezfouli**. The Impact of Abdominal Body Contouring Surgery on Physical Function After a Massive Weight Loss: A Pilot Non-Randomized Controlled Trial. Canadian Society for Exercise Physiology. 2021 Oct.
 
 - Owen Reid, **Sobhan Mardan-Dezfouli**. Measuring the Benefits of Body Contouring. BC Obesity Summit. 2021 Apr.
 
@@ -93,7 +93,7 @@ Presently, I am seeking opportunities where I may implement my data analytics, s
 -	Team Mentoring & Tutoring
 
 ## Languages
--	Bi-lingual (English & Farsi)
+-	Bilingual (English & Farsi)
 
 
 
