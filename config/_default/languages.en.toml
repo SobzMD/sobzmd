@@ -17,11 +17,11 @@ dateFormat = "2 January 2006"
 [author]
    name = "Sobhan Mardan"
    image = "img/tall_me.jpg"
-   headline = "Clinical Data Analyst"
+   headline = "Research Coordinator & Data Analyst"
    bio = "MSc. Kinesiology"
    links = [
     # { email = "mailto:sobhan09m@gmail.com" },
-     { github = "https://github.com/SobzMD" },
-     { linkedin = "https://www.linkedin.com/in/sobhan-mardan-dezfouli-5a6a7159/" },
-     { twitter = "https://twitter.com/SobhanMardan" }
+     #{ github = "https://github.com/SobzMD" },
+     { linkedin = "https://www.linkedin.com/in/sobhan-mardan-5a6a7159/" },
+    # { twitter = "https://twitter.com/SobhanMardan" }
      ]
