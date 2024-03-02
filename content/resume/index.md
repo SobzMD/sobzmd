@@ -18,13 +18,13 @@ Download CV
 
 Having worked within health care teams, I have frequently seen the limitations of our health system, which in part seem to arise from a lack of peer-reviewed evidence available for guiding treatments and long-term management of chronic illnesses (including mental illnesses, obesity, diabetes, chronic pain, etc.). These limitations can often severely impact quality of life for those with lived experiences of chronic illnesses.
 
-This has made me reflect on ways that I can contribute to improving quality of life on larger scales, which led me to the path that I am on today as a clinical data analyst. I completed my Master of Science, where I coordinated a multi-center clinical trial examining changes in quality of life measures with post-surgical intervention. During this time, I developed my clinical research skills, such as producing standard protocols for conducting clinical trials, project management, statistical analysis, and communication and distribution of research findings either through key performance measures (KPIs) to our collaborators or in conferences and publications.
+This has made me reflect on ways that I can contribute to improving quality of life on larger scales, which led me to the path that I am on today as a clinical research professional. I completed my Master of Science, where I coordinated a multi-center clinical trial examining changes in quality of life measures with post-surgical intervention. During this time, I developed my clinical research skills, such as producing standard protocols for conducting clinical trials, project management, statistical analysis, and communication and distribution of research findings either through key performance measures (KPIs) to our collaborators or in conferences and publications.
 
-After completing my degree, I took an employment opportunity with the Veteran’s Memorial Hospital in Nova Scotia in which I further solidified my biostatistical skills using R statistical packages and its derivatives, including RShiny and R flexdashboards.
+After completing my degree, I took an employment opportunity with the Veteran’s Memorial Hospital in Nova Scotia in Geriatric Epidemiology in which I further solidified my biostatistical skills using R statistical packages and its derivatives, including RShiny and R flexdashboards.
 
-Having worked directly with patients in both clinical care and research settings has given me a unique perspective regarding the *human* in the analysis. This has further increased my passion in clinical data analytics.
+Currently I work at Vancouver Imaging which consists of a group of Radiologists working directly with Vancouver General Hospital. In my current role, I perform a variety of research tasks including data analysis, research project development and organization, mentoring research fellows, and producing research products including manuscripts, abstracts, grants, and knowledge translation reports.  
 
-Presently, I am seeking opportunities to implement my data analytics, statistical analysis, data modeling, and visualization skills at any capacity to improve health care delivery and advancement.
+
 
 
 
@@ -35,14 +35,24 @@ Presently, I am seeking opportunities to implement my data analytics, statistica
   
   + Thesis: *The Impact of Abdominal Body Contouring Surgery on Physical Function After a Massive         Weight Loss: A Pilot Non-Randomized Controlled Trial* 
  
-- BSc in Kinesiology -- Simon Fraser University, Burnaby, BC (2018)
+- BSc in Biomedical Physiology and Kinesiology -- Simon Fraser University, Burnaby, BC (2018)
 
-  + *Concentration in Active Health & Rehabilitation*
+ 
 
 
 ## Professional Experience
 
-**Research Assistant -- Nova Scotia Health Authority (2021-present)**
+
+**Research Coordinator -- Vancouver Imaging (2023-present)**
+-	Develop analysis plans for research projects, analyze data using R statistical program.
+- Prepare manuscripts, abstracts, clinical study report. 
+-	Participate in team grant writing applications. 
+- Mentor research fellows, medical students, co-op students in their research projects. 
+- Work with the principal investigators to develop feasible research projects and budgets. 
+- Organize studies on REDCap database.
+
+
+**Research Assistant -- Nova Scotia Health Authority (2021-2023)**
 -	Analyze collected data via R statistical program and develop reports for communication amongst study partners and stakeholders.
 -	Develop performance analytics for clinical trials.
 -	Query electronic medical record database in R studio, and then clean and prepare data for analysis. 
@@ -68,6 +78,10 @@ Presently, I am seeking opportunities to implement my data analytics, statistica
 
 
 ## Publications & Conferences  
+
+- Role of On-site Machine Learning-Driven Coronary CT Fractional Flow Reserve (CT-FFR): A Valuable Cardiac Risk Stratification Tool in 24/7 Emergency Radiology Department (*In Preparation 2024*) - **Mardan-Dezfouli S** contribution: data analysis, manuscript preparation. 
+
+- Differentiation of Periarticular Mineralized Foci Using Dual-Energy CT: A Retrospective Chart Review (*In Review in Journal of Radiology 2024*) - **Mardan-Dezfouli S** Contribution: data analysis, manuscript preparation.
 
 -	**Mardan-Dezfouli S**, Reid OG, Fliss MD, Stevenson J, Harris D, Lyon MR, Koehle MS, Mitchell CJ. The Impact of Abdominal Body Contouring Surgery on Physical Function After Massive Weight Loss: A Pilot Prospective Matched Comparison. Aesthet Surg J. 2023 Jan 9;43(1):NP28-NP37. 
 
