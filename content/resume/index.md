@@ -79,9 +79,10 @@ Currently I work at Vancouver Imaging which consists of a group of Radiologists 
 
 ## Publications & Conferences  
 
-- Role of On-site Machine Learning-Driven Coronary CT Fractional Flow Reserve (CT-FFR): A Valuable Cardiac Risk Stratification Tool in 24/7 Emergency Radiology Department (*In Preparation 2024*) - **Mardan-Dezfouli S** contribution: data analysis, manuscript preparation. 
+- Maqsood A, Asghar M, **Mardan-Dezfouli S**, Khosa F. Gender and racial composition in leadership positions: a comprehensive analysis across medical specialities in Canada. Can Asso Emerg Phys. 2024 Jun. Retrieved from: https://www.xcdsystem.com/caep/program/TJ55ti0/index.cfm?pgid=1283. 
 
-- Differentiation of Periarticular Mineralized Foci Using Dual-Energy CT: A Retrospective Chart Review (*In Review in Journal of Radiology 2024*) - **Mardan-Dezfouli S** Contribution: data analysis, manuscript preparation.
+- Jeavons C, Zhang Y, Marcuzzi A, Murphy S, **Mardan-Dezfouli S**, Mannas M, Chang S. Targeted Biopsy on Unilateral mpMRI Prostate PIRADS 4 and 5 lesions: Time to Omit Contralateral Biopsies. Can Asso Rad.  2024 Apr.   Retrieved from: https://assets.swoogo.com/uploads/3699993-65fb514d5ca88.pdf. 
+
 
 -	**Mardan-Dezfouli S**, Reid OG, Fliss MD, Stevenson J, Harris D, Lyon MR, Koehle MS, Mitchell CJ. The Impact of Abdominal Body Contouring Surgery on Physical Function After Massive Weight Loss: A Pilot Prospective Matched Comparison. Aesthet Surg J. 2023 Jan 9;43(1):NP28-NP37. 
 
